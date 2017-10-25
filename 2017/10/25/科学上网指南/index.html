@@ -6,7 +6,7 @@
 <p>创建好主机之后在首页可以看到主机的信息，点击主机的名字之后可以进入管理界面，如果之前没有创建公私钥对可通过管理界面左侧的<strong>Access</strong>页面进行<strong>Launch Console</strong>，不知道root密码的可以通过下面的Reset root password进行重置。</p>
 <p>登录到主机上之后需要进行简单的配置，我们这里使用shadowsocks。</p>
 <p>首先安装pip</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ apt-get install python-pip</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ apt-get update</div><div class="line">$ apt-get install python-pip</div></pre></td></tr></table></figure>
 <p>然后安装shadowsocks</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pip install shadowsocks</div></pre></td></tr></table></figure>
 <p>最后进行shadowsocks的配置，首先创建配置文件</p>
